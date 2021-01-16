@@ -17,8 +17,8 @@ public class Main {
         MagicCalculator magicCalc = new MagicCalculator();
 
         //print user operations options
-        System.out.println("Please choose from the following operations:");
-        System.out.println("");
+//        System.out.println("Please choose from the following operations:");
+//        System.out.println("");
 
 
 
