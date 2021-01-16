@@ -9,16 +9,19 @@ public class MagicCalculator{
 
     //sin method
     public static double sin(double num3){
+        num3 = Math.toRadians(num3);
         return(Math.sin(num3));
     }
 
     //cosine
     public static double cosine(double num3){
+        num3 = Math.toRadians(num3);
         return(Math.cos(num3));
     }
 
     //tangent method
     public static double tangent(double num3){
+        num3 = Math.toRadians(num3);
         return(Math.tan(num3));
     }
 

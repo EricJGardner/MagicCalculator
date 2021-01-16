@@ -52,7 +52,7 @@ public class Main {
             } else if (operation == 14) {
                 System.out.println("Goodbye");
             } else {
-                System.out.println("Please did enter a number between 1 and 14");
+                System.out.println("Please try again,");
             }
 
             switch (operation) {
@@ -112,16 +112,23 @@ public class Main {
                     System.out.println("Thanks for pushing my buttons, see ya!");
                     break;
                 default:
-                    System.out.println("Invalid entry, please try again");
+                    System.out.println("Invalid entry");
             }
-            pressEnter();
+            if (operation != 14) {
+                pressEnter();
+            }
+
         }while (operation != 14);
 
 
     }//end main
-    private static void pressEnter(){
-        System.out.println("Press any key + enter to make another calculation");
-        input.next();
+    private static void pressEnter() {
+        System.out.println("Press enter to continue");
+        try {
+            System.in.read();
+        } catch (Exception e) {}
     }
 
-}
+}//end public class Main
+
+
